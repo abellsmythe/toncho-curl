@@ -71,14 +71,6 @@ The third is the cURL info curl_getinfo() with a couple extras.
 The fourth is the user data
 The fifth is the time that took the request
 
-Since you may have requests outstanding at the end of your script, you *MUST* call
-
-```php
-$cURL->finishAllRequests();
-```
-
-before you exit. If you don't, the final requests may be left unprocessed!
-
 ## Credits
 
 By Alton Bell Smythe, freely reusable.
